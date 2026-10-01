@@ -1,0 +1,491 @@
+body {
+
+    background: #f4f6fb;
+
+    color: #202124;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+.main-container {
+
+    max-width: 1100px;
+
+    padding-top: 35px;
+
+    padding-bottom: 60px;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.app-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+
+.brand {
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    margin-bottom: 8px;
+}
+
+
+.subtitle {
+
+    color: #6c757d;
+
+    margin: 0;
+}
+
+
+.ollama-status {
+
+    background: white;
+
+    padding: 10px 15px;
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.06);
+
+    font-size: 14px;
+}
+
+
+.status-dot {
+
+    display: inline-block;
+
+    width: 10px;
+
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #999;
+
+    margin-right: 6px;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.card {
+
+    border: none;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 6px 25px rgba(0, 0, 0, 0.06);
+}
+
+
+.main-card {
+
+    margin-bottom: 20px;
+}
+
+
+.result-card {
+
+    margin-bottom: 20px;
+}
+
+
+.card-title {
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+
+.section-title {
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   INPUT
+===================================================== */
+
+.form-label {
+
+    font-weight: 600;
+}
+
+
+.form-select {
+
+    border-radius: 10px;
+
+    padding: 11px;
+}
+
+
+.question-box {
+
+    min-height: 170px;
+
+    resize: vertical;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    font-size: 16px;
+}
+
+
+.question-box:focus {
+
+    border-color: #6c63ff;
+
+    box-shadow:
+        0 0 0 0.2rem
+        rgba(108, 99, 255, 0.15);
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.button-row {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+
+.generate-button {
+
+    background: #6c63ff;
+
+    color: white;
+
+    padding: 11px 22px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+}
+
+
+.generate-button:hover {
+
+    background: #574fd6;
+
+    color: white;
+}
+
+
+.clear-button {
+
+    border: 1px solid #ced4da;
+
+    border-radius: 10px;
+
+    padding: 11px 22px;
+}
+
+
+.upload-area {
+
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.upload-button {
+
+    background: #212529;
+
+    color: white;
+
+    border-radius: 10px;
+
+    padding-left: 20px;
+
+    padding-right: 20px;
+}
+
+
+.study-button {
+
+    background: #198754;
+
+    color: white;
+
+    border-radius: 10px;
+
+    padding: 10px 18px;
+}
+
+
+.study-button:hover {
+
+    background: #157347;
+
+    color: white;
+}
+
+
+/* =====================================================
+   LOADING
+===================================================== */
+
+.loading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #6c757d;
+
+    margin-top: 15px;
+}
+
+
+/* =====================================================
+   ANALYSIS
+===================================================== */
+
+.analysis-grid {
+
+    display: flex;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+
+.analysis-item {
+
+    background: #f8f9fa;
+
+    padding: 15px 20px;
+
+    border-radius: 12px;
+
+    min-width: 220px;
+}
+
+
+.analysis-item span {
+
+    display: block;
+
+    color: #6c757d;
+
+    font-size: 13px;
+
+    margin-bottom: 5px;
+}
+
+
+/* =====================================================
+   RESULT
+===================================================== */
+
+.result-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+
+.answer-box {
+
+    background: #f8f9fa;
+
+    border-left: 4px solid #6c63ff;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    line-height: 1.8;
+
+    white-space: pre-wrap;
+}
+
+
+.content-box {
+
+    background: #f8f9fa;
+
+    padding: 18px;
+
+    border-radius: 10px;
+
+    line-height: 1.7;
+
+    white-space: pre-wrap;
+}
+
+
+/* =====================================================
+   CODE
+===================================================== */
+
+pre {
+
+    background: #1e1e1e;
+
+    color: #f1f1f1;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    overflow-x: auto;
+}
+
+
+pre code {
+
+    font-family: Consolas, monospace;
+
+    font-size: 14px;
+}
+
+
+.copy-button {
+
+    border: 1px solid #ced4da;
+
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   TERMS
+===================================================== */
+
+.terms-container {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.term {
+
+    background: #e7f1ff;
+
+    color: #0d6efd;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   LIST
+===================================================== */
+
+ul {
+
+    padding-left: 22px;
+}
+
+
+li {
+
+    margin-bottom: 9px;
+}
+
+
+/* =====================================================
+   UPLOAD
+===================================================== */
+
+.upload-status {
+
+    margin-top: 12px;
+
+    color: #198754;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .app-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .brand {
+
+        font-size: 26px;
+    }
+
+
+    .upload-area {
+
+        flex-direction: column;
+    }
+
+
+    .upload-button {
+
+        width: 100%;
+    }
+
+
+    .analysis-grid {
+
+        flex-direction: column;
+    }
+
+}
